@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Task 3: Quiz & Jokes</h1>
+  </header>
+
+  <main>
+  <!-- Quiz Section -->
+<section class="card">
+  <h2>Interactive Quiz</h2>
+<p id="quiz-intro">Click the button to get a quiz!</p>
+  <button id="start-quiz-btn">Start Quiz</button>
+
+  <div id="quiz-container" style="display: none;">
+    <div id="question">Loading...</div>
+    <div id="options"></div>
+    <div class="nav-buttons">
+      <button id="prev-btn" style="display: none;">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+  </div>
+
+  <div id="result" style="display: none; margin-top: 1rem;"></div>
+</section>
+
+
+    <!-- API Joke Section -->
+    <section class="card">
+      <h2>Random Joke Generator</h2>
+      <p id="joke">Click the button to get a joke!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using HTML, CSS, JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
